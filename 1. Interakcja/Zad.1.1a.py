@@ -1,4 +1,6 @@
-'''Napisz program, który prosi użytkownika (przez `input()`), żeby podał, ile kosztuje kilo ziemniaków. Niech program policzy i wyświetli, ile trzeba będzie zapłacić za pięć kilo ziemniaków.'''
+'''Napisz program, który prosi użytkownika (przez `input()`),
+żeby podał, ile kosztuje kilo ziemniaków. Niech program policzy i wyświetli,
+ile trzeba będzie zapłacić za pięć kilo ziemniaków.'''
 
 kg = 5
 
