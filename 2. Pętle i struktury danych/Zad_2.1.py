@@ -5,8 +5,8 @@ tak długo, aż użytkownik poda prawidłowy wynik.'''
 
 import random
 
-x = random.randint(1, 101)
-y = random.randint(1, 101)
+x = random.randint(1, 100)
+y = random.randint(1, 100)
 
 print(f'Wylosowane zostały liczby {x} oraz {y}.')
 
