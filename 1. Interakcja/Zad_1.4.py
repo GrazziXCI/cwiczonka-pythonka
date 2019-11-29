@@ -18,9 +18,9 @@ if wiek < 18:
 elif wiek >= 18:
     if pobyt == 1:
         doba = 200
-    if pobyt >= 2 and pobyt < 5:
+    elif pobyt >= 2 and pobyt < 5:
         doba = 180
-    if pobyt >= 5:
+    elif pobyt >= 5:
         doba = 150
 
 if wiek > 65:
