@@ -12,21 +12,15 @@ odbior = dzien + naprawa
 
 if odbior % 7 == 0:
     print('Zamówienie będzie gotowe w niedziele')
-    exit()
 elif odbior % 6 == 0:
     print('Zamówienie będzie gotowe w sobotę')
-    exit()
 elif odbior % 5 == 0:
     print('Zamówienie będzie gotowe w piątek')
-    exit()
 elif odbior % 4 == 0:
     print('Zamówienie będzie gotowe w czwartek')
-    exit()
 elif odbior % 3 == 0:
     print('Zamówienie będzie gotowe w środę')
-    exit()
 elif odbior % 2 == 0:
     print('Zamówienie będzie gotowe we wtorek')
-    exit()
 else:
     print('Zamówienie będzie gotowe w poniedziałek')
