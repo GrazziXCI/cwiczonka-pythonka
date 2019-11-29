@@ -11,9 +11,9 @@ przedszkolny = 0
 szkolny = 0
 dorosly = 0
 emerytalny = 0
-x = True
 
-while x == True:
+
+while True:
     kategoria = input('''Z której kategorii chciałby Pan/Pani bilety?
     1-przedszkolny 0-6
     2-szkolny 7-17
@@ -33,7 +33,7 @@ while x == True:
         emerytalny += ile
     dod = input('Czy chciałbyś dodatkowe bilety? T/N ')
     if dod == 'N':
-        x = False
+        break
 
 print()
 cena = przedszkolny * 0 + szkolny * 2.28 + dorosly * 3.8 + emerytalny * 1.9
