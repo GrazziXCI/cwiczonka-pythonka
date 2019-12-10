@@ -11,38 +11,29 @@ Jeżeli użytkownik poda luty - zapytaj go o rok. Na tej podstawie policz czy w 
 
 
 def rok_przestepny(rok:int) ->int:
-    if rok % 4 == 0:
+    if rok % 4 == 0 and rok % 100 != 0:
+        wynik = 29
+    elif rok % 400 == 0:
         wynik = 29
     else:
         wynik = 28
     return wynik
 
 def liczba_dni(miesiac: str) -> int:
-    if miesiac == 'styczeń' or 'marzec' or 'maj' or 'lipiec' or 'sierpień' or 'październik' or 'grudzień':
+    if miesiac == 'styczeń' or miesiac == 'marzec' or miesiac == 'maj' or miesiac == 'lipiec' or miesiac == 'sierpień' or miesiac == 'październik' or miesiac == 'grudzień':
         wynik = 31
     else:
         wynik = 30
     return wynik
 
-miesiac = input('Ktory miesiąc? ')
-
-
-if miesiac == 'luty':
-    rok = int(input('W którym roku? '))
-    rok_przestepny(rok)
-else:
-    liczba_dni(miesiac)
-
-print(f'Miesiąc {miesiac} ma dokładnie {wynik} dni.')
-
-
 def test_liczba_dni():
-    assert liczba_dni('styczeń') == 31
-    assert liczba_dni('wrzesień') == 30
+    assert liczba_dni('grudzień') == 31
+    assert liczba_dni('czerwiec') == 30
 
 def test_roku():
     assert rok_przestepny(2012) == 29
     assert rok_przestepny(2010) == 28
+    assert rok_przestepny(2000) == 29
 
 
 
